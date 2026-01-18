@@ -1,0 +1,103 @@
+#about {
+    background-color: var(--text-light);
+    color: var(--bg-dark);
+    align-items: flex-start;
+    padding-top: var(--header-height);
+}
+
+.about-layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content {
+    flex-grow: 1; 
+    padding: 50px 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 160px;
+}
+
+.about-decorative-panel {
+    width: 500px; 
+    flex-shrink: 0;
+    height: 100%;
+    background-color: #D9D9D9;
+    overflow: hidden;
+    position: relative;
+}
+
+.archive-photos {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 60s linear infinite; 
+}
+
+.archive-photos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+.content-group {
+    position: relative;
+    padding-left: 100px; 
+}
+
+.field-study-group .decorative-circle,
+.anyam-ruang-group .decorative-circle {
+    position: absolute;
+    width: 186px;
+    height: 186px;
+    border-radius: 9999px;
+    background: var(--bg-dark);
+    opacity: 0.5;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.anyam-ruang-group {
+    margin-left: 150px;
+}
+
+.content-group h3, .content-group h2, .content-group p {
+    position: relative;
+    z-index: 1;
+}
+
+.content-group h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px; 
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    margin-bottom: 14px;
+}
+
+.content-group p {
+    font-size: 15px; 
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 140%; 
+    max-width: 650px;
+}
+
+.content-group h2 {
+    font-size: 18px; 
+    letter-spacing: 9.6px;
+    line-height: 125.887%;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    max-width: 1003px;
+}
+.content-group h2 .text-light { font-weight: 250; }
+.content-group h2 .text-semibold { font-weight: 600; }
